@@ -1,1 +1,167 @@
-HTMLElement.prototype.wrap=function(o){this.parentNode.insertBefore(o,this),this.parentNode.removeChild(this),o.appendChild(this)},Fluid.events={registerNavbarEvent:function(){var o=jQuery("#navbar"),n=jQuery("#navbar .dropdown-menu");0<o.offset().top&&(o.removeClass("navbar-dark"),n.removeClass("navbar-dark")),Fluid.utils.listenScroll((function(){o[50<o.offset().top?"addClass":"removeClass"]("top-nav-collapse"),n[50<o.offset().top?"addClass":"removeClass"]("dropdown-collapse"),0<o.offset().top?o.removeClass("navbar-dark"):o.addClass("navbar-dark"),n.removeClass("navbar-dark")})),jQuery("#navbar-toggler-btn").on("click",(function(){jQuery(".animated-icon").toggleClass("open"),jQuery("#navbar").toggleClass("navbar-col-show")}))},registerParallaxEvent:function(){var o,n=jQuery('#banner[parallax="true"]');0===n.length||0!==(o=jQuery("#board")).length&&Fluid.utils.listenScroll((function(){var e=jQuery(window).scrollTop()/5,r=96+parseInt(o.css("margin-top"),0);n.css({transform:"translate3d(0,"+(e=r<e?r:e)+"px,0)","-webkit-transform":"translate3d(0,"+e+"px,0)","-ms-transform":"translate3d(0,"+e+"px,0)","-o-transform":"translate3d(0,"+e+"px,0)"}),jQuery("#toc")&&jQuery("#toc-ctn").css({"padding-top":e+"px"})}))},registerScrollDownArrowEvent:function(){var o=jQuery(".scroll-down-bar");0!==o.length&&o.on("click",(function(){Fluid.utils.scrollToElement("#board",-jQuery("#navbar").height())}))},registerScrollTopArrowEvent:function(){var o,n,e,r,t,a=jQuery("#scroll-top-button");0===a.length||0!==(o=jQuery("#board")).length&&(e=n=!1,(r=function(){var r=o[0].getClientRects()[0].right;r=document.body.offsetWidth-r;n=50<=r,a.css({bottom:n&&e?"20px":"-60px",right:r-64+"px"})})(),jQuery(window).resize(r),t=o.offset().top,Fluid.utils.listenScroll((function(){var o=document.body.scrollTop+document.documentElement.scrollTop;e=t<=o,a.css({bottom:n&&e?"20px":"-60px"})})),a.on("click",(function(){jQuery("body,html").animate({scrollTop:0,easing:"swing"})})))},registerImageLoadedEvent:function(){if("NProgress"in window){var o,n,e=(n=((n=document.getElementById("banner"))&&(n=n.style.backgroundImage.match(/\((.*?)\)/)[1].replace(/(['"])/g,""),(o=new Image).onload=function(){window.NProgress&&window.NProgress.inc(.2)},o.src=n,o.complete&&o.onload()),jQuery("main img:not([lazyload])"))).length;for(const o of n){const n=o.onload;o.onload=function(){n&&n(),window.NProgress&&window.NProgress.inc(.5/e)},o.complete&&o.onload()}}},billboard:function(){"console"in window&&console.log("\n------------------------------------------------\n|                                              |\n|     ________  __            _        __      |\n|    |_   __  |[  |          (_)      |  ]     |\n|      | |_ \\_| | | __   _   __   .--.| |      |\n|      |  _|    | |[  | | | [  |/ /'`\\' |      |\n|     _| |_     | | | \\_/ |, | || \\__/  |      |\n|    |_____|   [___]'.__.'_/[___]'.__.;__]     |\n|                                              |\n|           Powered by Hexo x Fluid            |\n|         GitHub: https://git.io/JqpVD         |\n|                                              |\n------------------------------------------------\n    ")}};
+/* global Fluid */
+
+HTMLElement.prototype.wrap = function(wrapper) {
+  this.parentNode.insertBefore(wrapper, this);
+  this.parentNode.removeChild(this);
+  wrapper.appendChild(this);
+};
+
+Fluid.events = {
+
+  registerNavbarEvent: function() {
+    var navbar = jQuery('#navbar');
+    var submenu = jQuery('#navbar .dropdown-menu');
+    if (navbar.offset().top > 0) {
+      navbar.removeClass('navbar-dark');
+      submenu.removeClass('navbar-dark');
+    }
+    Fluid.utils.listenScroll(function() {
+      navbar[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('top-nav-collapse');
+      submenu[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('dropdown-collapse');
+      if (navbar.offset().top > 0) {
+        navbar.removeClass('navbar-dark');
+        submenu.removeClass('navbar-dark');
+      } else {
+        navbar.addClass('navbar-dark');
+        submenu.removeClass('navbar-dark');
+      }
+    });
+    jQuery('#navbar-toggler-btn').on('click', function() {
+      jQuery('.animated-icon').toggleClass('open');
+      jQuery('#navbar').toggleClass('navbar-col-show');
+    });
+  },
+
+  registerParallaxEvent: function() {
+    var bg = jQuery('#banner[parallax="true"]');
+    if (bg.length === 0) {
+      return;
+    }
+    var board = jQuery('#board');
+    if (board.length === 0) {
+      return;
+    }
+    var parallax = function() {
+      var oVal = jQuery(window).scrollTop() / 5;
+      var offset = parseInt(board.css('margin-top'), 0);
+      var max = 96 + offset;
+      if (oVal > max) {
+        oVal = max;
+      }
+      bg.css({
+        transform          : 'translate3d(0,' + oVal + 'px,0)',
+        '-webkit-transform': 'translate3d(0,' + oVal + 'px,0)',
+        '-ms-transform'    : 'translate3d(0,' + oVal + 'px,0)',
+        '-o-transform'     : 'translate3d(0,' + oVal + 'px,0)'
+      });
+      var toc = jQuery('#toc');
+      if (toc) {
+        jQuery('#toc-ctn').css({
+          'padding-top': oVal + 'px'
+        });
+      }
+    };
+    Fluid.utils.listenScroll(parallax);
+  },
+
+  registerScrollDownArrowEvent: function() {
+    var scrollbar = jQuery('.scroll-down-bar');
+    if (scrollbar.length === 0) {
+      return;
+    }
+    scrollbar.on('click', function() {
+      Fluid.utils.scrollToElement('#board', -jQuery('#navbar').height());
+    });
+  },
+
+  registerScrollTopArrowEvent: function() {
+    var topArrow = jQuery('#scroll-top-button');
+    if (topArrow.length === 0) {
+      return;
+    }
+    var board = jQuery('#board');
+    if (board.length === 0) {
+      return;
+    }
+    var posDisplay = false;
+    var scrollDisplay = false;
+    // Position
+    var setTopArrowPos = function() {
+      var boardRight = board[0].getClientRects()[0].right;
+      var bodyWidth = document.body.offsetWidth;
+      var right = bodyWidth - boardRight;
+      posDisplay = right >= 50;
+      topArrow.css({
+        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
+        'right' : right - 64 + 'px'
+      });
+    };
+    setTopArrowPos();
+    jQuery(window).resize(setTopArrowPos);
+    // Display
+    var headerHeight = board.offset().top;
+    Fluid.utils.listenScroll(function() {
+      var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
+      scrollDisplay = scrollHeight >= headerHeight;
+      topArrow.css({
+        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
+      });
+    });
+    // Click
+    topArrow.on('click', function() {
+      jQuery('body,html').animate({
+        scrollTop: 0,
+        easing   : 'swing'
+      });
+    });
+  },
+
+  registerImageLoadedEvent: function() {
+    if (!('NProgress' in window)) { return; }
+
+    var bg = document.getElementById('banner');
+    if (bg) {
+      var src = bg.style.backgroundImage;
+      var url = src.match(/\((.*?)\)/)[1].replace(/(['"])/g, '');
+      var img = new Image();
+      img.onload = function() {
+        window.NProgress && window.NProgress.inc(0.2);
+      };
+      img.src = url;
+      if (img.complete) { img.onload(); }
+    }
+
+    var notLazyImages = jQuery('main img:not([lazyload])');
+    var total = notLazyImages.length;
+    for (const img of notLazyImages) {
+      const old = img.onload;
+      img.onload = function() {
+        old && old();
+        window.NProgress && window.NProgress.inc(0.5 / total);
+      };
+      if (img.complete) { img.onload(); }
+    }
+  },
+
+  billboard: function() {
+    if (!('console' in window)) {
+      return;
+    }
+    // eslint-disable-next-line no-console
+    console.log(`
+------------------------------------------------
+|                                              |
+|     ________  __            _        __      |
+|    |_   __  |[  |          (_)      |  ]     |
+|      | |_ \\_| | | __   _   __   .--.| |      |
+|      |  _|    | |[  | | | [  |/ /'\`\\' |      |
+|     _| |_     | | | \\_/ |, | || \\__/  |      |
+|    |_____|   [___]'.__.'_/[___]'.__.;__]     |
+|                                              |
+|           Powered by Hexo x Fluid            |
+|         GitHub: https://git.io/JqpVD         |
+|                                              |
+------------------------------------------------
+    `);
+  }
+};

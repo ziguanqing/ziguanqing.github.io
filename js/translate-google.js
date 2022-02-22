@@ -1,1 +1,165 @@
-!function(){var t,e=new Date,n=this||self,r=/^[\w+/_-]+[=]{0,2}$/,o=null;function a(t){return(t=t.querySelector&&t.querySelector("script[nonce]"))&&(t=t.nonce||t.getAttribute("nonce"))&&r.test(t)?t:""}function c(t,e){function n(){}n.prototype=e.prototype,t.i=e.prototype,t.prototype=new n,(t.prototype.constructor=t).h=function(t,n,r){for(var o=Array(arguments.length-2),a=2;a<arguments.length;a++)o[a-2]=arguments[a];return e.prototype[n].apply(t,o)}}function i(t){return t}function l(t){var e;Error.captureStackTrace?Error.captureStackTrace(this,l):(e=Error().stack)&&(this.stack=e),t&&(this.message=String(t))}function s(t,e){for(var n="",r=(t=t.split("%s")).length-1,o=0;o<r;o++)n+=t[o]+(o<e.length?e[o]:"%s");l.call(this,n+t[r])}function p(t,e){throw new s("Failure"+(t?": "+t:""),Array.prototype.slice.call(arguments,1))}function u(t,e){this.g=e===g?t:""}c(l,Error),l.prototype.name="CustomError",c(s,l),s.prototype.name="AssertionError",u.prototype.toString=function(){return this.g+""};var g={};function m(t){(document.getElementsByTagName("head")[0]||document.body.parentNode.appendChild(document.createElement("head"))).appendChild(t)}if(window.addEventListener&&void 0===document.readyState&&window.addEventListener("DOMContentLoaded",(function(){document.readyState="complete"}),!1),!function(t){t=t.split(".");for(var e=window,n=0;n<t.length;++n)if(!(e=e[t[n]]))return;return 1}("google.translate.Element")){(y=function(t){t=t.split(".");for(var e=window,n=0;n<t.length;++n)e=e.hasOwnProperty?e.hasOwnProperty(t[n])?e[t[n]]:e[t[n]]={}:e[t[n]]||(e[t[n]]={});return e}("google.translate._const"))._cest=e,y._cl=navigator.language||navigator.userLanguage,y._cuc="googleTranslateElementInit",y._cac="",y._cam="",y._ctkk="449649.3822363247";var d="https://",f=d+(e="translate.googleapis.com"),y=(y._pah=e,y._pas=d,y._pbi=f+"/translate_static/img/te_bk.gif",y._pci=f+"/translate_static/img/te_ctrl3.gif",y._pli=f+"/translate_static/img/loading.gif",y._plla=e+"/translate_a/l",y._pmi=f+"/translate_static/img/mini_google.png",y._ps=f+"/translate_static/css/translateelement.css",y._puh="translate.google.cn",d=y._ps,(e=document.createElement("link")).type="text/css",e.rel="stylesheet",e.charset="UTF-8",e.href=d,m(e),f+`/translate_static/js/element/main_${navigator.language||navigator.userLanguage}.js`),h="SCRIPT";if("application/xhtml+xml"===(d=document).contentType&&(h=h.toLowerCase()),(h=d.createElement(h)).type="text/javascript",h.charset="UTF-8",void 0===t)if(d=null,(e=n.trustedTypes)&&e.createPolicy){try{d=e.createPolicy("goog#html",{createHTML:i,createScript:i,createScriptURL:i})}catch(t){n.console&&n.console.error(t.message)}t=d}else t=d;y=new u(y=(d=t)?d.createScriptURL(y):y,g);t:{try{var _,w=h&&h.ownerDocument;if((_=w&&(w.defaultView||w.parentWindow)||n).Element&&_.Location){var v=_;break t}}catch(t){}v=null}if(v&&void 0!==v.HTMLScriptElement&&(!h||!(h instanceof v.HTMLScriptElement)&&(h instanceof v.Location||h instanceof v.Element))){if("object"==(v=typeof h)&&null!=h||"function"==v)try{var E=h.constructor.displayName||h.constructor.name||Object.prototype.toString.call(h)}catch(t){E="<object could not be stringified>"}else E=void 0===h?"undefined":null===h?"null":typeof h;p("Argument is not a %s (or a non-Element, non-Location mock); got: %s","HTMLScriptElement",E)}E=y instanceof u&&y.constructor===u?y.g:(p("expected object of type TrustedResourceUrl, got '"+y+"' of type "+("object"!=(E=typeof y)?E:y?Array.isArray(y)?"array":E:"null")),"type_error:TrustedResourceUrl"),h.src=E,(E=(E=h.ownerDocument&&h.ownerDocument.defaultView)&&E!=n?a(E.document):o=null===o?a(n.document):o)&&h.setAttribute("nonce",E),m(h)}}();
+(function () {
+    var gtConstEvalStartTime = new Date();
+    var h = this || self,
+        l = /^[\w+/_-]+[=]{0,2}$/,
+        m = null;
+    function n(a) {
+        return (a = a.querySelector && a.querySelector("script[nonce]")) && (a = a.nonce || a.getAttribute("nonce")) &&
+            l.test(a) ? a : ""
+    }
+    function p(a, b) {
+        function c() {}
+        c.prototype = b.prototype;
+        a.i = b.prototype;
+        a.prototype = new c;
+        a.prototype.constructor = a;
+        a.h = function (g, f, k) {
+            for (var e = Array(arguments.length - 2), d = 2; d < arguments.length; d++) e[d - 2] = arguments[d];
+            return b.prototype[f].apply(g, e)
+        }
+    }
+    function q(a) {
+        return a
+    };
+    function r(a) {
+        if (Error.captureStackTrace) Error.captureStackTrace(this, r);
+        else {
+            var b = Error().stack;
+            b && (this.stack = b)
+        }
+        a && (this.message = String(a))
+    }
+    p(r, Error);
+    r.prototype.name = "CustomError";
+    function u(a, b) {
+        a = a.split("%s");
+        for (var c = "", g = a.length - 1, f = 0; f < g; f++) c += a[f] + (f < b.length ? b[f] : "%s");
+        r.call(this, c + a[g])
+    }
+    p(u, r);
+    u.prototype.name = "AssertionError";
+    function v(a, b) {
+        throw new u("Failure" + (a ? ": " + a : ""), Array.prototype.slice.call(arguments, 1));
+    };
+    var w;
+    function x(a, b) {
+        this.g = b === y ? a : ""
+    }
+    x.prototype.toString = function () {
+        return this.g + ""
+    };
+    var y = {};
+    function z(a) {
+        var b = document.getElementsByTagName("head")[0];
+        b || (b = document.body.parentNode.appendChild(document.createElement("head")));
+        b.appendChild(a)
+    }
+    function _loadJs(a) {
+        var b = document;
+        var c = "SCRIPT";
+        "application/xhtml+xml" === b.contentType && (c = c.toLowerCase());
+        c = b.createElement(c);
+        c.type = "text/javascript";
+        c.charset = "UTF-8";
+        if (void 0 === w) {
+            b = null;
+            var g = h.trustedTypes;
+            if (g && g.createPolicy) {
+                try {
+                    b = g.createPolicy("goog#html", {
+                        createHTML: q,
+                        createScript: q,
+                        createScriptURL: q
+                    })
+                } catch (t) {
+                    h.console && h.console.error(t.message)
+                }
+                w = b
+            } else w = b
+        }
+        a = (b = w) ? b.createScriptURL(a) : a;
+        a = new x(a, y);
+        a: {
+            try {
+                var f = c && c.ownerDocument,
+                    k = f && (f.defaultView || f.parentWindow);
+                k = k || h;
+                if (k.Element && k.Location) {
+                    var e = k;
+                    break a
+                }
+            } catch (t) {}
+            e = null
+        }
+        if (e && "undefined" != typeof e.HTMLScriptElement && (!c || !(c instanceof e.HTMLScriptElement) && (c instanceof e
+                .Location || c instanceof e.Element))) {
+            e = typeof c;
+            if ("object" == e && null != c || "function" == e) try {
+                var d = c.constructor.displayName || c.constructor.name || Object.prototype.toString.call(c)
+            } catch (t) {
+                d = "<object could not be stringified>"
+            } else d = void 0 === c ? "undefined" : null === c ? "null" : typeof c;
+            v("Argument is not a %s (or a non-Element, non-Location mock); got: %s",
+                "HTMLScriptElement", d)
+        }
+        a instanceof x && a.constructor === x ? d = a.g : (d = typeof a, v(
+            "expected object of type TrustedResourceUrl, got '" + a + "' of type " + ("object" != d ? d : a ?
+                Array.isArray(a) ? "array" : d : "null")), d = "type_error:TrustedResourceUrl");
+        c.src = d;
+        (d = c.ownerDocument && c.ownerDocument.defaultView) && d != h ? d = n(d.document) : (null === m && (m = n(
+            h.document)), d = m);
+        d && c.setAttribute("nonce", d);
+        z(c)
+    }
+    function _loadCss(a) {
+        var b = document.createElement("link");
+        b.type = "text/css";
+        b.rel = "stylesheet";
+        b.charset = "UTF-8";
+        b.href = a;
+        z(b)
+    }
+    function _isNS(a) {
+        a = a.split(".");
+        for (var b = window, c = 0; c < a.length; ++c)
+            if (!(b = b[a[c]])) return !1;
+        return !0
+    }
+    function _setupNS(a) {
+        a = a.split(".");
+        for (var b = window, c = 0; c < a.length; ++c) b.hasOwnProperty ? b.hasOwnProperty(a[c]) ? b = b[a[c]] : b =
+            b[a[c]] = {} : b = b[a[c]] || (b[a[c]] = {});
+        return b
+    }
+    window.addEventListener && "undefined" == typeof document.readyState && window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+            document.readyState = "complete"
+        }, !1);
+    if (_isNS('google.translate.Element')) {
+        return
+    }(function () {
+        var c = _setupNS('google.translate._const');
+        c._cest = gtConstEvalStartTime;
+        gtConstEvalStartTime = undefined;
+        c._cl = navigator.language || navigator.userLanguage;
+        c._cuc = 'googleTranslateElementInit';
+        c._cac = '';
+        c._cam = '';
+        c._ctkk = '449649.3822363247';
+        var h = 'translate.googleapis.com';
+        var s = (true ? 'https' : window.location.protocol == 'https:' ? 'https' : 'http') + '://';
+        var b = s + h;
+        c._pah = h;
+        c._pas = s;
+        c._pbi = b + '/translate_static/img/te_bk.gif';
+        c._pci = b + '/translate_static/img/te_ctrl3.gif';
+        c._pli = b + '/translate_static/img/loading.gif';
+        c._plla = h + '/translate_a/l';
+        c._pmi = b + '/translate_static/img/mini_google.png';
+        c._ps = b + '/translate_static/css/translateelement.css';
+        c._puh = 'translate.google.cn';
+        _loadCss(c._ps);
+        _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
+    })();
+})();
