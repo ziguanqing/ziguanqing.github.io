@@ -96,8 +96,9 @@
 }
 
 .notice {
-    background-color: #fff !important;
+    /* background-color: #fff !important; */
     border-radius: 0.5rem;
     padding: 7px;
     padding-top: 13px;
 }
+
