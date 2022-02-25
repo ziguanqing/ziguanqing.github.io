@@ -1,7 +1,9 @@
 @import "fonts.css";
 
 
-
+.markdown-body {
+    font-family: 'HYXuanSong45S';
+}
 /* 主页打字机 */
 .h6,
 h6 {

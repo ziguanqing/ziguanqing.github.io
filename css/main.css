@@ -299,7 +299,7 @@ html {
 }
 html,
 body {
-  font-family: Noto Serif SC;
+  font-family: HYXuanSong45S;
 }
 html,
 body,
@@ -896,7 +896,7 @@ label {
 .markdown-body {
   font-size: 1rem;
   line-height: 1.6;
-  font-family: Noto Serif SC;
+  font-family: HYXuanSong45S;
   margin-bottom: 2rem;
   color: var(--post-text-color);
 }
