@@ -1,21 +1,21 @@
 @font-face {
     font-family: "Fira";
     src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
-    font-style:	normal;
+    font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "LXGW";
     src: url("/fonts/LXGWWenKai-Regular.woff2") format("woff2");
-    font-style:	normal;
+    font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "LXGW_title";
     src: url("/fonts/LXGWWenKai.ttf");
-    font-style:	normal;
+    font-style: normal;
     font-weight: normal;
 }
 
@@ -29,8 +29,7 @@
 @font-face {
     font-family: "HYXuanSong45S";
     src: url("/fonts/HYXuanSong45S.ttf");
-    font-style:	normal;
+    font-style: normal;
     font-weight: normal;
     /* font-display: swap; */
 }
-
