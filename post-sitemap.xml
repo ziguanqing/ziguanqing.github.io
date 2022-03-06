@@ -2,14 +2,14 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://blog.jinghu-moon.top/</loc>
+        <loc>https://jinghu-moon.top/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
 
     <url>
-        <loc>https://blog.jinghu-moon.top/posts/3b8ba7c7/</loc>
+        <loc>https://jinghu-moon.top/posts/3b8ba7c7/</loc>
         <lastmod>2022-03-04T06:56:00.669Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -17,7 +17,7 @@
     </url>
 
     <url>
-        <loc>https://blog.jinghu-moon.top/posts/7c77eb1/</loc>
+        <loc>https://jinghu-moon.top/posts/7c77eb1/</loc>
         <lastmod>2022-02-26T02:55:11.493Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -25,7 +25,7 @@
     </url>
 
     <url>
-        <loc>https://blog.jinghu-moon.top/posts/9113742/</loc>
+        <loc>https://jinghu-moon.top/posts/9113742/</loc>
         <lastmod>2022-02-24T02:50:40.699Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -33,7 +33,7 @@
     </url>
 
     <url>
-        <loc>https://blog.jinghu-moon.top/posts/4a17b156/</loc>
+        <loc>https://jinghu-moon.top/posts/4a17b156/</loc>
         <lastmod>2022-01-11T10:52:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
