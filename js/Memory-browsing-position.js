@@ -1,1 +1,13 @@
-$((function(){localStorage.tempScrollTop&&$(window).scrollTop(localStorage.tempScrollTop)})),$(window).on("scroll",(function(){localStorage.setItem("tempScrollTop",$(window).scrollTop())})),window.onbeforeunload=function(){var o=$(window).scrollTop();localStorage.setItem("tempScrollTop",o)};
+
+$(function () {
+  if (localStorage.tempScrollTop) {
+    $(window).scrollTop(localStorage.tempScrollTop);
+  }
+});
+$(window).on("scroll", function () {
+  localStorage.setItem("tempScrollTop", $(window).scrollTop());
+});
+window.onbeforeunload = function () {
+  var tempScrollTop = $(window).scrollTop();
+  localStorage.setItem("tempScrollTop", tempScrollTop);
+};
