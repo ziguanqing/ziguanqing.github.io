@@ -1,1 +1,21 @@
-@font-face{font-family:Fira;src:url(../fonts/FiraCode-Regular.woff2) format("woff2");font-style:normal;font-weight:400}@font-face{font-family:LXGW;src:url(../fonts/LXGWWenKai-Regular.woff2) format("woff2");font-style:normal;font-weight:400}@font-face{font-family:"三极古拙楷书简";src:url(../fonts/三极古拙楷书简.woff) format("woff"),url(../fonts/三极古拙楷书简.ttf) format("truetype");font-style:normal;font-weight:400}
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraCode-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LXGW";
+  src: url("../fonts/LXGWWenKai-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "三极古拙楷书简";
+  src: url("../fonts/三极古拙楷书简.woff") format("woff"),
+    url("../fonts/三极古拙楷书简.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
