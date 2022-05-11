@@ -1,6 +1,8 @@
 @import "fonts.css";
 
-
+html {
+  font-family: "汉仪润圆";
+}
 /* .markdown-body {
     font-family: 'HYXuanSong45S';
 } */

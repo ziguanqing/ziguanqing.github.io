@@ -19,3 +19,11 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "汉仪润圆";
+  src: url("https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/HYRunYuan-45W.woff2") format("woff2"),
+  url("../fonts/HYRunYuan-45W.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
