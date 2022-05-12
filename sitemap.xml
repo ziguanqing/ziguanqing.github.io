@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/posts/7c77eb1/</loc>
-    
-    <lastmod>2022-05-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://jinghu-moon.top/posts/184eb85d/</loc>
     
     <lastmod>2022-05-04</lastmod>
@@ -38,6 +29,15 @@
   </url>
   
   <url>
+    <loc>https://jinghu-moon.top/posts/7c77eb1/</loc>
+    
+    <lastmod>2022-05-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jinghu-moon.top/baidu_verify_code-vUz6ZQ7nz5.html</loc>
     
     <lastmod>2022-05-04</lastmod>
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/manifest.json</loc>
+    <loc>https://jinghu-moon.top/allstars.json</loc>
     
     <lastmod>2022-05-04</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/allstars.json</loc>
+    <loc>https://jinghu-moon.top/manifest.json</loc>
     
     <lastmod>2022-05-04</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/fcircle/index.html</loc>
+    <loc>https://jinghu-moon.top/links/index.html</loc>
     
     <lastmod>2022-05-04</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/links/index.html</loc>
+    <loc>https://jinghu-moon.top/fcircle/index.html</loc>
     
     <lastmod>2022-05-04</lastmod>
     
@@ -146,14 +146,14 @@
 
   
   <url>
-    <loc>https://jinghu-moon.top/tags/%E5%95%8A/</loc>
+    <loc>https://jinghu-moon.top/tags/%E5%95%8A%E6%88%91/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://jinghu-moon.top/tags/%E5%95%8A%E6%88%91/</loc>
+    <loc>https://jinghu-moon.top/tags/%E5%95%8A/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -176,6 +176,13 @@
   </url>
   
   <url>
+    <loc>https://jinghu-moon.top/categories/%E8%BD%AC%E8%BD%BD/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://jinghu-moon.top/categories/%E5%93%88/1/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -184,13 +191,6 @@
   
   <url>
     <loc>https://jinghu-moon.top/categories/%E5%93%88%E5%93%88/</loc>
-    <lastmod>2022-05-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://jinghu-moon.top/categories/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
