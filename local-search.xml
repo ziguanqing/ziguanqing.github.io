@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>测试sitemap抓取</title>
+    <link href="/posts/6d2973f8/"/>
+    <url>/posts/6d2973f8/</url>
+    
+    <content type="html"><![CDATA[<p>这是一篇用来测试 sitemap 抓取的文章。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>sitemap</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>地图</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/posts/4a17b156/"/>
     <url>/posts/4a17b156/</url>
