@@ -1,1 +1,37 @@
-@font-face{font-family:"汉仪玄宋35S";src:url(https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/HYXuanSong35S%2BLora-Regular.woff2),url(../fonts/HYXuanSong35S+Lora-Regular.woff2) format("woff");font-style:normal;font-weight:400}@font-face{font-family:HarmonyOS;src:url(https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/HarmonyOS_Sans_SC_Regular.woff2) format("woff"),url(../fonts/HarmonyOS_Sans_SC_Regular.woff2) format("woff");font-style:normal;font-weight:400}@font-face{font-family:Fira;src:url(../fonts/FiraCode-Regular.woff2) format("woff2");font-style:normal;font-weight:400}@font-face{font-family:LXGW;src:url(../fonts/LXGWWenKai-Regular.woff2) format("woff2");font-style:normal;font-weight:400}@font-face{font-family:"三极古拙楷书简";src:url(https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/SJgzks.woff2) format("woff2"),url(../fonts/SJgzks.woff2) format("woff2");font-style:normal;font-weight:400}
+@font-face {
+  font-family: "汉仪玄宋35S";
+  src: url("https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/HYXuanSong35S%2BLora-Regular.woff2"),
+    url("../fonts/HYXuanSong35S+Lora-Regular.woff2") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/HarmonyOS_Sans_SC_Regular.woff2") format("woff"),
+    url("../fonts/HarmonyOS_Sans_SC_Regular.woff2") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraCode-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LXGW";
+  src: url("../fonts/LXGWWenKai-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "三极古拙楷书简";
+  src: url("https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/SJgzks.woff2") format("woff2"),
+    url("../fonts/SJgzks.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
