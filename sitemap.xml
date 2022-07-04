@@ -4,22 +4,12 @@
 
     <sitemap>
         <loc>https://jinghu-moon.top/post-sitemap.xml</loc>
-        <lastmod>2022-05-15T01:34:34.414Z</lastmod>
+        <lastmod>2022-07-04T10:13:32.408Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>https://jinghu-moon.top/page-sitemap.xml</loc>
         <lastmod>2022-05-17T15:29:47.381Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://jinghu-moon.top/category-sitemap.xml</loc>
-        <lastmod>2022-05-12T12:59:21.766Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>https://jinghu-moon.top/tag-sitemap.xml</loc>
-        <lastmod>2022-05-12T12:59:21.766Z</lastmod>
     </sitemap>
 
 </sitemapindex>
