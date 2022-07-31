@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /css/
+Disallow: /img/
+Disallow: /js/
+Disallow: /fonts/
+Sitemap: http://jinghu-moon.top/sitemap.xml
+Sitemap: http://jinghu-moon.top/baidusitemap.xml
